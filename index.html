@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 20/10 ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas for falling flowers -->
+    <canvas id="flowerCanvas"></canvas>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="musicToggle" class="music-btn">
+            <span class="icon-music">🎵</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header fade-in">
+            <h1 class="title">Chúc mừng ngày phụ nữ Việt Nam</h1>
+            <p class="subtitle">Dành tặng Bánh Minh E</p>
+
+            <!-- Special Message Button in Header -->
+            <div class="header-btn-container">
+                <button id="specialMessageBtn" class="special-btn">
+                    <span class="btn-glow"></span>
+                    ✉️ Nhắn cho em
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Image Section -->
+        <div class="image-container fade-in-up">
+            <div class="image-wrapper">
+                <img src="picture1 Background Removed.png" alt="Beautiful Woman" class="main-image">
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+
+        <!-- Interactive Message Section -->
+        <div class="message-section fade-in-up">
+            <p class="hint-text">💐 Click vào những bông hoa rơi để nhận lời chúc 💐</p>
+            <div class="wishes-collected">
+                <span id="wishCount">0</span>/10 lời chúc đã mở
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ on October 2025</p>
+        </footer>
+    </div>
+
+    <!-- Modal for Special Message -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-heart">💖</div>
+            <h2 class="modal-title">Cho Em</h2>
+            <div class="modal-body">
+                <p class="message-text">
+                    <!-- Customize lời nhắn của bạn ở đây -->
+                    Mến chào em,<br><br>
+
+                    Nhân dịp 20/10, anh muốn gửi đến em và gia đình những lời chúc tốt đẹp nhất.<br><br>
+
+                    Chúc em luôn xinh đẹp, hạnh phúc và thành công trong mọi điều em làm.
+                    Hy vọng nụ cười ấy sẽ luôn nở trên môi em.<br><br>
+
+                    Đồng thời cũng chúc cho mẹ và gia đình em luôn được yêu thương, đong đầy hạnh phúc.<br><br>
+
+                    Thiệt vui khi gặp em! 💕
+                </p>
+            </div>
+            <div class="modal-footer">
+                <p class="signature">- Dương Hữu Quang -</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wish Popup (appears when clicking flowers) -->
+    <div id="wishPopup" class="wish-popup">
+        <div class="wish-content">
+            <span class="wish-close">&times;</span>
+            <div class="wish-icon">🌸</div>
+            <p class="wish-text"></p>
+        </div>
+    </div>
+
+    <!-- Audio Element (Optional - add your music file) -->
+    <audio id="bgMusic" loop>
+        <!-- Add your music file here -->
+        <!-- <source src="music.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
